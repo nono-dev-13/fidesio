@@ -1,0 +1,37 @@
+.wrapper {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 54rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 72rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 96rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 117rem;
+  }
+}
+
+@media (min-width: 1450px) {
+  .wrapper {
+    max-width: 142rem;
+  }
+}
