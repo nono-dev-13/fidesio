@@ -1,0 +1,112 @@
+.accordion  {
+  color: $white;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+  $self:&;
+
+  li {
+    &:first-child {
+      #{$self}__heading {
+        border-radius: 1rem;
+      }
+    }
+
+    &.open {
+      #{$self}__content {
+        max-height: 40rem;
+        border-radius: 1rem 1rem 0 0;
+      }
+    }
+  }
+
+  &__heading {
+    cursor: pointer;
+    padding: 3rem 0 3rem 4rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    position: relative;
+
+    h2 {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    &:before {
+      content: '';
+      height: 1rem;
+      position: absolute;
+      width: 100%;
+      top: -1rem;
+      left: 0;
+      z-index: -1;
+    }
+
+    &.bg-blue {
+      &:before {
+        background-color: $blue;
+        top: 0;
+      }
+    }
+
+    &.bg-dark-blue {
+      &:before {
+        background-color: $dark-blue;
+      }
+    }
+
+    &.bg-light-orange {
+      &:before {
+        background-color: $light-orange;
+      }
+    }
+
+    &.bg-dark-orange {
+      &:before {
+        background-color: $orange;
+      }
+    }
+  }
+
+  &__content  {
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease .3s;
+    position: relative;
+
+    &--close {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      cursor: pointer;
+    }
+    
+    &--title {
+      font-size: 4rem;
+      font-weight: 500;
+      padding-left: 4rem;
+      padding-top: 4rem;
+      margin-bottom: 8rem;
+    }
+
+    &--subtitle {
+      font-size: 2.7rem;
+      font-weight: 500;
+      padding-left: 4rem;
+      margin-bottom: 7rem;
+    }
+
+    &--text {
+      font-weight: 400;
+      padding-left: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    &--pattern {
+      padding-top: 4rem;
+    }
+  }
+}
+
+.accordion li.open .accordion__content  {
+  
+}

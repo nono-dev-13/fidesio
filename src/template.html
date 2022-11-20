@@ -16,9 +16,140 @@
 
 <body>
   <div class="wrapper">
-    <h1>coucou</h1>
-    <img src="<%= require('images/photo.jpg') %>" alt="photo">
+    <div class="accordion">
+      <ul>
+        <li class="open">
+          <div class="accordion__content bg-blue">
+            <img src="<%= require('images/btn-accordion.png') %>" alt="close"
+              class="accordion__content--close js-close">
+            <div class="row">
+              <div class="col-12 col-lg-5">
+                <h3 class="accordion__content--title">Conseil</h3>
+                <h4 class="accordion__content--subtitle">Vous accompagner dans la démarche sécurité</h4>
+                <p class="accordion__content--text">La maitrise des risques numériques passe par la mise œuvre d’une
+                  démarche décurité à la fois organisée
+                  et formalisée.</p>
+              </div>
+              <div class="col-12 offset-lg-3 col-lg-4">
+                <img src="<%= require('images/trait.png') %>" alt="pattern" class="accordion__content--pattern">
+              </div>
+            </div>
+
+          </div>
+          <div class="accordion__heading js-heading bg-blue">
+            <h2>1</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="accordion__content bg-dark-blue">
+            <img src="<%= require('images/btn-accordion.png') %>" alt="close"
+              class="accordion__content--close js-close">
+            <h3 class="accordion__content--title">Conseil</h3>
+            <h4 class="accordion__content--subtitle">Vous accompagner dans la démarche sécurité</h4>
+            <p class="accordion__content--text">La maitrise des risques numériques passe par la mise œuvre d’une
+              démarche décurité à la fois organisée
+              et formalisée.</p>
+          </div>
+          <div class="accordion__heading js-heading bg-dark-blue">
+            <h2 class="color-white">2</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="accordion__content bg-light-orange">
+            <img src="<%= require('images/btn-accordion.png') %>" alt="close"
+              class="accordion__content--close js-close">
+
+            <h3 class="accordion__content--title">Conseil</h3>
+            <h4 class="accordion__content--subtitle">Vous accompagner dans la démarche sécurité</h4>
+            <p class="accordion__content--text">La maitrise des risques numériques passe par la mise œuvre d’une
+              démarche décurité à la fois organisée
+              et formalisée.</p>
+          </div>
+          <div class="accordion__heading js-heading bg-light-orange">
+            <h2 class="color-white">3</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="accordion__content bg-dark-orange">
+            <img src="<%= require('images/btn-accordion.png') %>" alt="close"
+              class="accordion__content--close js-close">
+            <h3 class="accordion__content--title">Conseil</h3>
+            <h4 class="accordion__content--subtitle">Vous accompagner dans la démarche sécurité</h4>
+            <p class="accordion__content--text">La maitrise des risques numériques passe par la mise œuvre d’une
+              démarche décurité à la fois organisée
+              et formalisée.</p>
+          </div>
+          <div class="accordion__heading js-heading bg-dark-orange">
+            <h2 class="color-white">4</h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ref">
+      <img src="<%= require('images/credit_agricole.svg') %>" alt="crédit agricole">
+      <img src="<%= require('images/allianz.svg') %>" alt="allianz">
+      <img src="<%= require('images/arcelor.svg') %>" alt="arcelor">
+      <img src="<%= require('images/credit_agricole.svg') %>" alt="crédit agricole">
+      <img src="<%= require('images/allianz.svg') %>" alt="allianz">
+      <img src="<%= require('images/arcelor.svg') %>" alt="arcelor">
+    </div>
+
+    <div class="last-publish">
+      <h2>Nos dernières publications</h2>
+
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <div class="last-publish__first">
+            <img src="<%= require('images/photo.jpg') %>" alt="photo" class="img-fluid">
+            <h3 class="last-publish__first--title">Rencontre avec Pauline, Bintia et Emilie</h3>
+            <div class="last-publish__other--info">
+              <div class="tag">Audit</div>
+              <p class="last-publish__date">15 septembre 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 offset-lg-1 col-lg-2">
+          <div class="last-publish__other">
+            <h3 class="last-publish__other--title">Cyber Stress :
+              une grande étude sur le stress des Responsables Cyber
+            </h3>
+            <p class="last-publish__other--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Nullam faucibus orci a quam venenatis laoreet non eu
+              massa.
+            </p>
+            <div class="last-publish__other--info">
+              <div class="tag">Audit</div>
+              <p class="last-publish__date">15 septembre 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 offset-lg-1 col-lg-2">
+          <div class="last-publish__other card">
+            <div class="card__img">
+              <img src="<%= require('images/cap.png') %>" alt="photo">
+            </div>
+            <h3 class="last-publish__other--title">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </h3>
+            <p class="last-publish__other--text">Une opération inédite qui ouvre la voie à un nouveau
+              modèle d’entreprise à impact sociétal...
+            </p>
+            <div class="last-publish__other--info">
+              <div class="tag">Audit</div>
+              <p class="last-publish__date">15 septembre 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
+
+
 
 </body>
 

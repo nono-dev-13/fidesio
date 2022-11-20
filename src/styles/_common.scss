@@ -1,6 +1,50 @@
 html {
 	font-size: 62.5%;
-  }
-  body {
+}
+
+body {
 	font-size: 1.6rem;
-  }
+  font-family: 'roboto', sans-serif,;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-dark-blue {
+  background-color: $dark-blue;
+}
+
+.bg-light-orange {
+  background-color: $light-orange;
+}
+
+.bg-dark-orange {
+  background-color: $orange;
+}
+
+.color-white {
+  color: $white;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.tag {
+  background-color: $light-blue;
+  border-radius: 3rem;
+  color: $white;
+  padding: .4rem .8rem;
+  font-size: 1.4rem;
+  margin-right: 3rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
